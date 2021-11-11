@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Drop Menu</title>
+    <script src="https://kit.fontawesome.com/864c5ffdfc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+        <div class="content">
+            <div class="profile">
+                <img src="https://data.apksum.com/0f/net.halasat.tv/3.1.0/icon.png" alt="profile" />
+            </div>
+            <h2> Samer Jameel <br /><span>Web Developer</span></h2>
+
+        </div>
+        <ul class="nav">
+            <li><a href="#">Bronze</a></li>
+
+            <li><a href="#">Silver</a></li>
+
+            <li><a href="#">Gold</a></li>
+
+            <li><a href="#">Platinum</a></li>
+
+            <li><a href="#">diamond</a></li>
+
+            <li><a href="#">VIP</a></li>
+        </ul>
+        <div class="toggle">
+            <i class="far fa-arrow-alt-circle-down"></i>
+        </div>
+    </div>
+    <script>
+        const card = document.querySelector(".card");
+        const cardtoggle = document.querySelector(".toggle")
+        cardtoggle.onclick = () => {
+            card.classList.toggle("active")
+        };
+    </script>
+</body>
+
+</html>
